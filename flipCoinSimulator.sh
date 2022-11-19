@@ -1,9 +1,12 @@
-#!/bin/bash -x
+#!/bin/bash
 
-randomCheck=$((RANDOM%2))
-if [ $randomCheck -eq 1 ]
-then
+for((i=1;i<=5;i++))
+do
+ randomCheck=$((RANDOM%2))
+  if [ $randomCheck -eq 1 ]
+  then
     echo "Its Heads"
-else
+  else
     echo "Its Tails"
-fi
+  fi
+done
